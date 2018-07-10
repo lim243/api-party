@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, NavLink, Switch } from 'react-router-dom'
 
 import './App.css'
+import GitHub from './Github'
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
         </ul>
 
         <Switch>
-          <Route path="/github" render={() => <h1>GitHUB!!</h1>} />
+          <Route path="/github" component={GitHub} />
           <Route render={() => (        //default case
             <p>To get started click one of the links above!</p>
           )} />
