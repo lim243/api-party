@@ -26,11 +26,8 @@ class SpotifyArtist extends Component {
     render() {
         return(
             <div className="SpotifyArtist">
-                Im an Artist
                 <div>{this.state.artist.name}</div>
-                <img 
-                    src={this.state.artist.images}
-                />
+                <div>Popularity: {this.state.artist.popularity}</div>
             </div>
         )
     }
